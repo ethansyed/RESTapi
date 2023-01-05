@@ -1,0 +1,25 @@
+GET http://127.0.0.1:3000/subscribers
+
+###
+GET http://127.0.0.1:3000/subscribers/63afd998588f692965dee2e1
+
+###
+POST http://127.0.0.1:3000/subscribers
+Content-Type: application/json
+
+{
+    "name": "Amazing Person",
+    "subscribedToChannel": "Ethan Youtube Channel"
+}
+
+###
+DELETE http://127.0.0.1:3000/subscribers/63afd998588f692965dee2e1
+
+###
+
+PATCH  http://127.0.0.1:3000/subscribers/63afd998588f692965dee2e1
+Content-Type: application/json
+
+{
+    "name": "New Name"
+}
